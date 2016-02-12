@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J6v-7p-Jb3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="cKJ-jS-jSM">
+            <objects>
+                <viewController title="Main View Controller" id="ili-p0-LQA" customClass="ViewController" customModule="GridMobileClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w10-Fj-WCi"/>
+                        <viewControllerLayoutGuide type="bottom" id="8gM-ue-Ah9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EBZ-X9-C2b" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="k6c-eM-9nB">
+                                <rect key="frame" x="146" y="28" width="309" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="DqD-rA-cin"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Staging"/>
+                                    <segment title="Production"/>
+                                    <segment title="Simulated"/>
+                                </segments>
+                                <connections>
+                                    <action selector="environmentControlValueChanged:" destination="ili-p0-LQA" eventType="valueChanged" id="7c6-Cm-ilf"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zKk-QY-9Ac">
+                                <rect key="frame" x="146" y="64" width="309" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KIF-kp-WkY">
+                                <rect key="frame" x="146" y="108" width="309" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3u-6l-JgA">
+                                <rect key="frame" x="146" y="146" width="51" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="WNp-0l-r0C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="ili-p0-LQA" eventType="touchUpInside" id="DfD-jZ-Ecq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krc-mb-qVD">
+                                <rect key="frame" x="231" y="146" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Gqd-eJ-xwb"/>
+                                    <constraint firstAttribute="width" constant="75" id="r8Z-uj-O7H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="ili-p0-LQA" eventType="touchUpInside" id="Azt-td-DcV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wph-f6-Pcg">
+                                <rect key="frame" x="146" y="184" width="120" height="30"/>
+                                <state key="normal" title="Forgot Username">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotUsernameTapped:" destination="ili-p0-LQA" eventType="touchUpInside" id="YGh-hw-ZbP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTD-Wc-Pzb">
+                                <rect key="frame" x="288" y="184" width="117" height="30"/>
+                                <state key="normal" title="Forgot Password">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPasswordTapped:" destination="ili-p0-LQA" eventType="touchUpInside" id="IMX-60-5g4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIb-FW-Y7Y" userLabel="LoginResponseView">
+                                <rect key="frame" x="146" y="231" width="309" height="326"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Auth context" translatesAutoresizingMaskIntoConstraints="NO" id="DwA-GK-FeU" userLabel="Token Text View">
+                                        <rect key="frame" x="0.0" y="26" width="309" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMs-tz-phX">
+                                        <rect key="frame" x="0.0" y="113" width="222" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="79" id="FCE-QJ-fQs"/>
+                                            <constraint firstAttribute="height" constant="21" id="SrP-uC-HIq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Error message text" translatesAutoresizingMaskIntoConstraints="NO" id="O1F-Ar-mo3" userLabel="Message Text View">
+                                        <rect key="frame" x="0.0" y="128" width="309" height="61"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Context:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cui-QE-SJp">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="VpN-0d-Trh"/>
+                                            <constraint firstAttribute="height" constant="23" id="qgs-5B-yLY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Keychain data" translatesAutoresizingMaskIntoConstraints="NO" id="Nli-sN-Fdu">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYU-uw-k8F">
+                                        <rect key="frame" x="56" y="210" width="197" height="19"/>
+                                        <state key="normal" title="Read Context from Keychain">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="readContextFromKeychain:" destination="ili-p0-LQA" eventType="touchUpInside" id="7ag-bx-2YZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6w-xQ-ADa">
+                                        <rect key="frame" x="73" y="260" width="135" height="30"/>
+                                        <state key="normal" title="Use Context">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="useContextTapped:" destination="ili-p0-LQA" eventType="touchUpInside" id="i2I-vC-AIk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkm-R7-7Rh">
+                                        <rect key="frame" x="73" y="231" width="149" height="30"/>
+                                        <state key="normal" title="Validate Auth Context">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="validateContextTapped:" destination="ili-p0-LQA" eventType="touchUpInside" id="zTG-T0-mxL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="O1F-Ar-mo3" firstAttribute="trailing" secondItem="DwA-GK-FeU" secondAttribute="trailing" id="4QT-mA-WtS"/>
+                                    <constraint firstItem="WMs-tz-phX" firstAttribute="leading" secondItem="DwA-GK-FeU" secondAttribute="leading" id="Cx9-b8-gXD"/>
+                                    <constraint firstItem="DwA-GK-FeU" firstAttribute="top" secondItem="wIb-FW-Y7Y" secondAttribute="top" constant="20" id="FYb-r4-rB5"/>
+                                    <constraint firstAttribute="trailing" secondItem="DwA-GK-FeU" secondAttribute="trailing" id="Fhx-AA-6lF"/>
+                                    <constraint firstItem="WMs-tz-phX" firstAttribute="leading" secondItem="wIb-FW-Y7Y" secondAttribute="leading" id="N6K-gA-GEo"/>
+                                    <constraint firstItem="Cui-QE-SJp" firstAttribute="top" secondItem="wIb-FW-Y7Y" secondAttribute="top" id="NUw-UZ-V31"/>
+                                    <constraint firstItem="O1F-Ar-mo3" firstAttribute="top" secondItem="WMs-tz-phX" secondAttribute="bottom" constant="8" symbolic="YES" id="SdL-3t-Z9E"/>
+                                    <constraint firstItem="O1F-Ar-mo3" firstAttribute="leading" secondItem="WMs-tz-phX" secondAttribute="leading" id="dyg-8S-6rg"/>
+                                    <constraint firstItem="WMs-tz-phX" firstAttribute="top" secondItem="DwA-GK-FeU" secondAttribute="bottom" constant="8" symbolic="YES" id="fTo-Ms-zVs"/>
+                                    <constraint firstItem="WMs-tz-phX" firstAttribute="top" secondItem="Cui-QE-SJp" secondAttribute="bottom" constant="50" id="hwp-5s-FTV"/>
+                                    <constraint firstItem="Cui-QE-SJp" firstAttribute="leading" secondItem="DwA-GK-FeU" secondAttribute="leading" id="mRk-dY-Pfm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Krc-mb-qVD" firstAttribute="top" secondItem="KIF-kp-WkY" secondAttribute="bottom" constant="8" id="3iv-YA-FAg"/>
+                            <constraint firstItem="KIF-kp-WkY" firstAttribute="leading" secondItem="wph-f6-Pcg" secondAttribute="leading" id="414-xW-eYc"/>
+                            <constraint firstItem="MTD-Wc-Pzb" firstAttribute="leading" secondItem="wph-f6-Pcg" secondAttribute="trailing" constant="30" id="EGg-GX-v4a"/>
+                            <constraint firstItem="wIb-FW-Y7Y" firstAttribute="top" secondItem="MTD-Wc-Pzb" secondAttribute="bottom" constant="8" symbolic="YES" id="Gdn-dN-QBF"/>
+                            <constraint firstItem="KIF-kp-WkY" firstAttribute="leading" secondItem="zKk-QY-9Ac" secondAttribute="leading" id="IbD-gv-lLp"/>
+                            <constraint firstItem="Krc-mb-qVD" firstAttribute="leading" secondItem="G3u-6l-JgA" secondAttribute="trailing" constant="54" id="Luw-qB-WgM"/>
+                            <constraint firstItem="KIF-kp-WkY" firstAttribute="leading" secondItem="G3u-6l-JgA" secondAttribute="leading" id="QGe-2k-XHv"/>
+                            <constraint firstItem="k6c-eM-9nB" firstAttribute="top" secondItem="w10-Fj-WCi" secondAttribute="bottom" constant="8" symbolic="YES" id="S9v-ez-QQL"/>
+                            <constraint firstItem="zKk-QY-9Ac" firstAttribute="trailing" secondItem="k6c-eM-9nB" secondAttribute="trailing" id="UjX-yv-TrS"/>
+                            <constraint firstItem="wph-f6-Pcg" firstAttribute="top" secondItem="G3u-6l-JgA" secondAttribute="bottom" constant="8" symbolic="YES" id="aao-By-aXh"/>
+                            <constraint firstItem="KIF-kp-WkY" firstAttribute="trailing" secondItem="wIb-FW-Y7Y" secondAttribute="trailing" id="bRL-qJ-OaM"/>
+                            <constraint firstItem="KIF-kp-WkY" firstAttribute="leading" secondItem="wIb-FW-Y7Y" secondAttribute="leading" id="fZM-ry-PYA"/>
+                            <constraint firstItem="8gM-ue-Ah9" firstAttribute="top" secondItem="wIb-FW-Y7Y" secondAttribute="bottom" constant="82" id="h9Z-O2-lcm"/>
+                            <constraint firstItem="zKk-QY-9Ac" firstAttribute="trailing" secondItem="KIF-kp-WkY" secondAttribute="trailing" id="hBl-OV-Tqg"/>
+                            <constraint firstItem="wIb-FW-Y7Y" firstAttribute="top" secondItem="wph-f6-Pcg" secondAttribute="bottom" constant="8" symbolic="YES" id="iDf-bE-Q4R"/>
+                            <constraint firstItem="G3u-6l-JgA" firstAttribute="top" secondItem="KIF-kp-WkY" secondAttribute="bottom" constant="8" symbolic="YES" id="jvY-pE-LQc"/>
+                            <constraint firstItem="zKk-QY-9Ac" firstAttribute="top" secondItem="k6c-eM-9nB" secondAttribute="bottom" constant="57" id="jzb-1U-xEO"/>
+                            <constraint firstItem="k6c-eM-9nB" firstAttribute="leading" secondItem="zKk-QY-9Ac" secondAttribute="leading" id="nfv-LG-ZEu"/>
+                            <constraint firstItem="k6c-eM-9nB" firstAttribute="centerX" secondItem="EBZ-X9-C2b" secondAttribute="centerX" id="pc6-05-QQS"/>
+                            <constraint firstItem="KIF-kp-WkY" firstAttribute="top" secondItem="zKk-QY-9Ac" secondAttribute="bottom" constant="8" symbolic="YES" id="wth-CC-ty4"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="w5M-Ow-Wgy" appends="YES" id="TgN-xa-q2D"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="vFs-0H-jfS"/>
+                    <connections>
+                        <outlet property="ValidateAuthContextButton" destination="Wkm-R7-7Rh" id="3ec-H3-43E"/>
+                        <outlet property="environmentControl" destination="k6c-eM-9nB" id="8aM-rm-95k"/>
+                        <outlet property="keychainTextView" destination="Nli-sN-Fdu" id="8ua-mP-ilP"/>
+                        <outlet property="loginResponseView" destination="wIb-FW-Y7Y" id="Sre-WE-4uN"/>
+                        <outlet property="messageTextView" destination="O1F-Ar-mo3" id="WBq-oP-9IC"/>
+                        <outlet property="passwordField" destination="KIF-kp-WkY" id="K1k-re-g7H"/>
+                        <outlet property="readFromKeychainButton" destination="yYU-uw-k8F" id="qcC-cl-zFB"/>
+                        <outlet property="tokenTextView" destination="DwA-GK-FeU" id="3Xl-Vd-mvb"/>
+                        <outlet property="useContextButton" destination="H6w-xQ-ADa" id="qAL-XI-Wrc"/>
+                        <outlet property="usernameField" destination="zKk-QY-9Ac" id="E2r-ZG-MVj"/>
+                        <segue destination="0YZ-8i-9bn" kind="show" identifier="ContinueToConsentSegue" id="qEM-KY-D1q"/>
+                        <segue destination="PTu-Zj-8w5" kind="show" identifier="RefreshToken" id="4sv-K6-UPv"/>
+                        <segue destination="dr0-Fo-WWN" kind="show" identifier="UseContext" id="vyL-ez-ibp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rmn-cd-W0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="w5M-Ow-Wgy">
+                    <connections>
+                        <action selector="viewTapped:" destination="ili-p0-LQA" id="acc-Ef-BIF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="771" y="-1169"/>
+        </scene>
+        <!--Use Context View Controller-->
+        <scene sceneID="UVq-G5-HFk">
+            <objects>
+                <viewController id="dr0-Fo-WWN" customClass="UseContextViewController" customModule="GridMobileClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9AB-C0-AEB"/>
+                        <viewControllerLayoutGuide type="bottom" id="lnD-Uk-Qy9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XoE-J2-to5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Access Token:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJd-Xq-146">
+                                <rect key="frame" x="16" y="86" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="empty" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzW-gN-MC3">
+                                <rect key="frame" x="139" y="85" width="295" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u62-U0-FkF">
+                                <rect key="frame" x="182" y="126" width="157" height="30"/>
+                                <state key="normal" title="Show User's Consents">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showUserConsentsTapped:" destination="dr0-Fo-WWN" eventType="touchUpInside" id="anH-hc-BQV"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="consents" translatesAutoresizingMaskIntoConstraints="NO" id="EGN-ic-mNM">
+                                <rect key="frame" x="27" y="207" width="332" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVF-FG-qNF">
+                                <rect key="frame" x="126" y="157" width="268" height="30"/>
+                                <state key="normal" title="Show User's Consents - Expired Token">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showUserConsentsExpTokenTapped:" destination="dr0-Fo-WWN" eventType="touchUpInside" id="uWF-mW-glJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="accessToken" destination="lzW-gN-MC3" id="3cz-AV-sSs"/>
+                        <outlet property="userConsents" destination="EGN-ic-mNM" id="iox-ik-KM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VR1-um-oMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="-384"/>
+        </scene>
+        <!--Consent View Controller-->
+        <scene sceneID="QNg-3o-Hdc">
+            <objects>
+                <viewController title="Consent View Controller" id="0YZ-8i-9bn" userLabel="Consent View Controller" customClass="ConsentViewController" customModule="GridMobileClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3gB-XF-BBo"/>
+                        <viewControllerLayoutGuide type="bottom" id="SFY-Zl-UKv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cBQ-sm-5gR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-iW-Bob">
+                                <rect key="frame" x="58" y="331" width="63" height="30"/>
+                                <state key="normal" title="Accept">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="acceptConsentPressed:" destination="0YZ-8i-9bn" eventType="touchUpInside" id="Pc8-U8-mar"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSG-j4-EHa">
+                                <rect key="frame" x="48" y="64" width="332" height="264"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvy-TD-6jK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Pi Consent" id="7Lq-ot-qpu"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAC-sd-m5W">
+                                <rect key="frame" x="230" y="331" width="51" height="30"/>
+                                <state key="normal" title="Decline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="declineConsentPressed:" destination="0YZ-8i-9bn" eventType="touchUpInside" id="UvR-jA-Z15"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pi Consent" id="Azn-ix-xf3"/>
+                    <connections>
+                        <outlet property="consentWebView" destination="LSG-j4-EHa" id="x4P-ju-j31"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTb-Oe-vRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766" y="-1880"/>
+        </scene>
+        <!--Refresh Token View Controller-->
+        <scene sceneID="642-fV-8O6">
+            <objects>
+                <viewController id="PTu-Zj-8w5" customClass="RefreshTokenViewController" customModule="GridMobileClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cnv-NZ-mkU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ae6-pO-tlQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S6b-Ep-lLv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9qr-z7-HsO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Context:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFA-IU-wx8">
+                                        <rect key="frame" x="37" y="73" width="128" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Access Token:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRy-zM-bCp">
+                                        <rect key="frame" x="35" y="106" width="94" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZV-9d-OH6">
+                                        <rect key="frame" x="189" y="100" width="175" height="33"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Refresh Token:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml4-gj-QpG">
+                                        <rect key="frame" x="35" y="147" width="96" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-ul-vos">
+                                        <rect key="frame" x="189" y="141" width="175" height="33"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expires In:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4R-hb-wwA">
+                                        <rect key="frame" x="33" y="188" width="81" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQK-5a-hDJ">
+                                        <rect key="frame" x="189" y="182" width="175" height="33"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="1" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XOx-YU-ctr">
+                                        <rect key="frame" x="32" y="230" width="97" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rU7-f4-BkJ">
+                                        <rect key="frame" x="188" y="230" width="173" height="30"/>
+                                        <state key="normal" title="Modify expiration interval">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ModifyExpIntervalTapped:" destination="PTu-Zj-8w5" eventType="touchUpInside" id="61e-sR-Ady"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omd-58-ILX">
+                                        <rect key="frame" x="172" y="268" width="192" height="30"/>
+                                        <state key="normal" title="Validate Context Count">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ValidateContextTapped:" destination="PTu-Zj-8w5" eventType="touchUpInside" id="ZZp-gz-33n"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Acceess Token:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpt-Wq-Mtu">
+                                        <rect key="frame" x="33" y="312" width="155" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Refresh Token:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAb-cE-Bxi">
+                                        <rect key="frame" x="33" y="346" width="129" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKQ-Ze-ESh">
+                                        <rect key="frame" x="189" y="306" width="175" height="33"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-5S-K7W">
+                                        <rect key="frame" x="189" y="347" width="175" height="33"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpH-It-1Z9">
+                                        <rect key="frame" x="189" y="388" width="175" height="33"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sec." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH2-NY-VBO">
+                                        <rect key="frame" x="138" y="239" width="24" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="validateContextCountTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tfp-G4-eML">
+                                        <rect key="frame" x="32" y="269" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Expires In:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coc-Ak-I7F">
+                                        <rect key="frame" x="35" y="387" width="101" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEN-aA-9oa">
+                                        <rect key="frame" x="189" y="429" width="160" height="30"/>
+                                        <state key="normal" title="Provided Access Token">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="providedAccessTokenTapped:" destination="PTu-Zj-8w5" eventType="touchUpInside" id="Ggf-gA-XG0"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lCf-Yx-MeI">
+                                        <rect key="frame" x="32" y="429" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Error msg." translatesAutoresizingMaskIntoConstraints="NO" id="7Bv-9k-UaO">
+                                        <rect key="frame" x="32" y="467" width="331" height="63"/>
+                                        <color key="backgroundColor" red="1" green="0.5765439738" blue="0.29858680659999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# request" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6A-tR-U3d">
+                                        <rect key="frame" x="129" y="273" width="53" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83659231364888242" green="1" blue="0.56586085480145931" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="CurrentAccessToken" destination="xZV-9d-OH6" id="PXn-N0-vo8"/>
+                        <outlet property="CurrentExpiresIn" destination="lQK-5a-hDJ" id="YLs-Ul-J7d"/>
+                        <outlet property="CurrentRefreshToken" destination="vJm-ul-vos" id="KeQ-ee-g3O"/>
+                        <outlet property="ErrorMessages" destination="7Bv-9k-UaO" id="dYf-XM-rxK"/>
+                        <outlet property="ExpirationIntervalInSeconds" destination="XOx-YU-ctr" id="G4G-tc-PQb"/>
+                        <outlet property="NewAccessToken" destination="bKQ-Ze-ESh" id="LMO-8Y-kGN"/>
+                        <outlet property="NewExpiresIn" destination="MpH-It-1Z9" id="K1g-XR-HM7"/>
+                        <outlet property="NewRefreshToken" destination="Td1-5S-K7W" id="nNa-D2-4bD"/>
+                        <outlet property="providedAccessTokenTextField" destination="lCf-Yx-MeI" id="WiX-2E-6FP"/>
+                        <outlet property="validateContextCountTextField" destination="Tfp-G4-eML" id="Ln9-7S-K8f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66w-m1-72f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="-1169"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PPo-Fc-Ujo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J6v-7p-Jb3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GSX-SN-af6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ili-p0-LQA" kind="relationship" relationship="rootViewController" id="8El-d6-4h3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxW-8j-HU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="-1169"/>
+        </scene>
+    </scenes>
+</document>

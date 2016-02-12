@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Configurable Settings</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>DefaultValue</key>
+			<string>Branded App</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>Title</key>
+			<string>App Name</string>
+			<key>Key</key>
+			<string>app_brand_name</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Environment Type</string>
+			<key>Key</key>
+			<string>environment_type</string>
+			<key>DefaultValue</key>
+			<string>Staging</string>
+			<key>Values</key>
+			<array>
+				<string>Mock</string>
+				<string>Staging</string>
+				<string>Production</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>Mock</string>
+				<string>Staging</string>
+				<string>Production</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>DefaultValue</key>
+			<string>http://s3.amazonaws.com/percolate-media-image-assets/24378678_520</string>
+			<key>Title</key>
+			<string>Image URL</string>
+			<key>Key</key>
+			<string>brand_image_one_url</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

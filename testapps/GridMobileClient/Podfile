@@ -1,0 +1,14 @@
+platform :ios, '7.0'
+source 'ssh://git@devops-tools.pearson.com/mp/gridmobile-cocoapods.git'
+
+target 'GridMobileClient' do
+  pod 'grid-ios-sdk', '2.0.0'
+end
+
+post_install do |installer_representation|
+    installer_representation.project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+        end
+    end
+end

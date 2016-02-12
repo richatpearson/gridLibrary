@@ -1,0 +1,6 @@
+framework module GRIDMobileSDK {
+  umbrella header "GRIDMobileSDK.h"
+
+  export *
+  module * { export * }
+}

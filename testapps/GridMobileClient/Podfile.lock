@@ -1,0 +1,10 @@
+PODS:
+  - grid-ios-sdk (2.0.0)
+
+DEPENDENCIES:
+  - grid-ios-sdk (= 2.0.0)
+
+SPEC CHECKSUMS:
+  grid-ios-sdk: a0cb0fa2a3de57b7dbabfe8e79bb746ad676b239
+
+COCOAPODS: 0.35.0

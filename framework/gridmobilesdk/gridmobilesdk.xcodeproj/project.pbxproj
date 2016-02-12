@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		79DD03F21A851A7E00F7D996 /* UniversalFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 79DD03F51A851A7E00F7D996 /* Build configuration list for PBXAggregateTarget "UniversalFramework" */;
+			buildPhases = (
+				79DD03F61A851AA400F7D996 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalFramework;
+			productName = UniversalFramework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		6D6F12DD1A23846100F78E9D /* PGMSecureKeychainStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D6F12DB1A23846100F78E9D /* PGMSecureKeychainStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D6F12DE1A23846100F78E9D /* PGMSecureKeychainStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6F12DC1A23846100F78E9D /* PGMSecureKeychainStorage.m */; };
+		6D8D2FC71A1D373E00DCAFBB /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D2FC11A1D373E00DCAFBB /* README.rtf */; };
+		6D8D2FC81A1D373E00DCAFBB /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D2FC11A1D373E00DCAFBB /* README.rtf */; };
+		6D8E90831A1EB02C002391EB /* PGMSecureKeychainStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E90821A1EB02C002391EB /* PGMSecureKeychainStorageTests.swift */; };
+		790813DE1A97FF4B00925770 /* PGMForgotUsernamePasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790813DD1A97FF4B00925770 /* PGMForgotUsernamePasswordTests.swift */; };
+		791BF88F1A35CDFF00984B2C /* PGMConsentPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 791BF88D1A35CDFF00984B2C /* PGMConsentPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791BF8901A35CDFF00984B2C /* PGMConsentPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 791BF88E1A35CDFF00984B2C /* PGMConsentPolicy.m */; };
+		791BF8921A35CE6600984B2C /* PGMConsentPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BF8911A35CE6600984B2C /* PGMConsentPolicyTests.swift */; };
+		791BF8951A35F07A00984B2C /* PGMConsentSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 791BF8931A35F07A00984B2C /* PGMConsentSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791BF8961A35F07A00984B2C /* PGMConsentSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 791BF8941A35F07A00984B2C /* PGMConsentSerializer.m */; };
+		791BF8981A35F3FF00984B2C /* PGMConsentSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BF8971A35F3FF00984B2C /* PGMConsentSerializerTests.swift */; };
+		791BF89B1A360C5400984B2C /* PGMConsentConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 791BF8991A360C5400984B2C /* PGMConsentConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791BF89C1A360C5400984B2C /* PGMConsentConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 791BF89A1A360C5400984B2C /* PGMConsentConnector.m */; };
+		79500C141A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 79500C121A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79500C151A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79500C131A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.m */; };
+		79500C171A1FCA47003A4B69 /* PGMAuthKeychainStorageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79500C161A1FCA47003A4B69 /* PGMAuthKeychainStorageManagerTests.swift */; };
+		795B34A21A16364D00EC9D22 /* PGMCoreNetworkRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B34A11A16364D00EC9D22 /* PGMCoreNetworkRequesterTests.swift */; };
+		7970C3B91A03FFAD004C57FF /* gridmobilesdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 7970C3B81A03FFAD004C57FF /* gridmobilesdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7970C3D11A041B42004C57FF /* PGMClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 7970C3CF1A041B42004C57FF /* PGMClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7970C3D21A041B42004C57FF /* PGMClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7970C3D01A041B42004C57FF /* PGMClient.m */; };
+		7970C3D51A041E13004C57FF /* PGMClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7970C3D41A041E13004C57FF /* PGMClientTests.swift */; };
+		798918FD1A07D412009633C7 /* PGMEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 798918FB1A07D412009633C7 /* PGMEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798918FE1A07D412009633C7 /* PGMEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 798918FC1A07D412009633C7 /* PGMEnvironment.m */; };
+		798919021A07D5D6009633C7 /* PGMEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798919011A07D5D6009633C7 /* PGMEnvironmentTests.swift */; };
+		798919051A07D70E009633C7 /* PGMAuthOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 798919031A07D70E009633C7 /* PGMAuthOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798919061A07D70E009633C7 /* PGMAuthOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798919041A07D70E009633C7 /* PGMAuthOptions.m */; };
+		798919081A07D72B009633C7 /* PGMAuthOptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798919071A07D72B009633C7 /* PGMAuthOptionsTests.swift */; };
+		7989190B1A081B56009633C7 /* PGMError.h in Headers */ = {isa = PBXBuildFile; fileRef = 798919091A081B56009633C7 /* PGMError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989190C1A081B56009633C7 /* PGMError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989190A1A081B56009633C7 /* PGMError.m */; };
+		7989190F1A081BC7009633C7 /* PGMAuthenticatedContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989190D1A081BC7009633C7 /* PGMAuthenticatedContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798919101A081BC7009633C7 /* PGMAuthenticatedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989190E1A081BC7009633C7 /* PGMAuthenticatedContext.m */; };
+		798919131A0826EC009633C7 /* PGMAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = 798919111A0826EC009633C7 /* PGMAuthenticator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798919141A0826EC009633C7 /* PGMAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = 798919121A0826EC009633C7 /* PGMAuthenticator.m */; };
+		798919171A08273D009633C7 /* PGMFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 798919151A08273D009633C7 /* PGMFactory.h */; };
+		798919181A08273D009633C7 /* PGMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 798919161A08273D009633C7 /* PGMFactory.m */; };
+		7989191B1A082764009633C7 /* PGMClassroom.h in Headers */ = {isa = PBXBuildFile; fileRef = 798919191A082764009633C7 /* PGMClassroom.h */; };
+		7989191C1A082764009633C7 /* PGMClassroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989191A1A082764009633C7 /* PGMClassroom.m */; };
+		7989191F1A083229009633C7 /* PGMAuthResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989191D1A083229009633C7 /* PGMAuthResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798919201A083229009633C7 /* PGMAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989191E1A083229009633C7 /* PGMAuthResponse.m */; };
+		798919221A089794009633C7 /* PGMFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798919211A089794009633C7 /* PGMFactoryTests.swift */; };
+		798919241A089C95009633C7 /* PGMAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798919231A089C95009633C7 /* PGMAuthenticatorTests.swift */; };
+		798919261A089CB9009633C7 /* PGMAuthResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798919251A089CB9009633C7 /* PGMAuthResponseTests.swift */; };
+		798919281A089CE8009633C7 /* PGMErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798919271A089CE8009633C7 /* PGMErrorTests.swift */; };
+		7989192A1A089D09009633C7 /* PGMAuthenticatedContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798919291A089D09009633C7 /* PGMAuthenticatedContextTests.swift */; };
+		79A842F71A36CC0E002DA5F5 /* PGMConsentConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A842F61A36CC0E002DA5F5 /* PGMConsentConnectorTests.swift */; };
+		79AC577A1A09D9A2000CF734 /* PGMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 79AC57781A09D9A2000CF734 /* PGMConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79AC577B1A09D9A2000CF734 /* PGMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC57791A09D9A2000CF734 /* PGMConstants.m */; };
+		79AC57801A0AC0D0000CF734 /* PGMAuthConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 79AC577E1A0AC0D0000CF734 /* PGMAuthConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79AC57811A0AC0D0000CF734 /* PGMAuthConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC577F1A0AC0D0000CF734 /* PGMAuthConnector.m */; };
+		79AC57831A0AC107000CF734 /* PGMAuthConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC57821A0AC107000CF734 /* PGMAuthConnectorTests.swift */; };
+		79AC57861A0AC44E000CF734 /* PGMAuthConnectorSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 79AC57841A0AC44E000CF734 /* PGMAuthConnectorSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79AC57871A0AC44E000CF734 /* PGMAuthConnectorSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC57851A0AC44E000CF734 /* PGMAuthConnectorSerializer.m */; };
+		79AC57891A0AC46D000CF734 /* PGMAuthConnectorSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC57881A0AC46D000CF734 /* PGMAuthConnectorSerializerTests.swift */; };
+		79BF46771A52097200D05086 /* PGMAuthContextValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BF46751A52097200D05086 /* PGMAuthContextValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79BF46781A52097200D05086 /* PGMAuthContextValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BF46761A52097200D05086 /* PGMAuthContextValidator.m */; };
+		79BF467A1A52F33C00D05086 /* PGMAuthContextValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF46791A52F33C00D05086 /* PGMAuthContextValidatorTests.swift */; };
+		79BF467C1A5393D900D05086 /* PGMClientRefreshIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF467B1A5393D900D05086 /* PGMClientRefreshIntegrationTests.swift */; };
+		79C964401A0D08E90044D540 /* PGMAuthMockDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C9643E1A0D08E90044D540 /* PGMAuthMockDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79C964411A0D08E90044D540 /* PGMAuthMockDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9643F1A0D08E90044D540 /* PGMAuthMockDataProvider.m */; };
+		79C964431A0D0A040044D540 /* PGMAuthMockDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C964421A0D0A040044D540 /* PGMAuthMockDataProviderTests.swift */; };
+		79C964461A0D65E70044D540 /* PGMClientAuthIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C964451A0D65E70044D540 /* PGMClientAuthIntegrationTests.swift */; };
+		79C9644A1A1252780044D540 /* PGMCoreNetworkRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C964481A1252780044D540 /* PGMCoreNetworkRequester.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79C9644B1A1252780044D540 /* PGMCoreNetworkRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C964491A1252780044D540 /* PGMCoreNetworkRequester.m */; };
+		79C9644D1A12A3590044D540 /* PGMClientIntegrationTestsObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9644C1A12A3590044D540 /* PGMClientIntegrationTestsObjC.m */; };
+		79F968B51A83FFCF007D3C5A /* PGMClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7970C3D01A041B42004C57FF /* PGMClient.m */; };
+		79F968B61A83FFDB007D3C5A /* PGMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 798919161A08273D009633C7 /* PGMFactory.m */; };
+		79F968B71A83FFDF007D3C5A /* PGMEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 798918FC1A07D412009633C7 /* PGMEnvironment.m */; };
+		79F968B81A83FFE3007D3C5A /* PGMError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989190A1A081B56009633C7 /* PGMError.m */; };
+		79F968B91A83FFE9007D3C5A /* PGMAuthenticatedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989190E1A081BC7009633C7 /* PGMAuthenticatedContext.m */; };
+		79F968BA1A83FFF2007D3C5A /* PGMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC57791A09D9A2000CF734 /* PGMConstants.m */; };
+		79F968BB1A840018007D3C5A /* PGMAuthContextValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BF46761A52097200D05086 /* PGMAuthContextValidator.m */; };
+		79F968BC1A840024007D3C5A /* PGMConsentPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 791BF88E1A35CDFF00984B2C /* PGMConsentPolicy.m */; };
+		79F968BD1A84002A007D3C5A /* PGMAuthKeychainStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79500C131A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.m */; };
+		79F968BE1A840031007D3C5A /* PGMAuthFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FF1D811A0BC42F00D450FC /* PGMAuthFactory.m */; };
+		79F968BF1A840036007D3C5A /* PGMAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989191E1A083229009633C7 /* PGMAuthResponse.m */; };
+		79F968C01A84003B007D3C5A /* PGMAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = 798919121A0826EC009633C7 /* PGMAuthenticator.m */; };
+		79F968C11A840044007D3C5A /* PGMAuthOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798919041A07D70E009633C7 /* PGMAuthOptions.m */; };
+		79F968C21A840048007D3C5A /* PGMConsentConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 791BF89A1A360C5400984B2C /* PGMConsentConnector.m */; };
+		79F968C31A84004E007D3C5A /* PGMAuthConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC577F1A0AC0D0000CF734 /* PGMAuthConnector.m */; };
+		79F968C41A840059007D3C5A /* PGMConsentSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 791BF8941A35F07A00984B2C /* PGMConsentSerializer.m */; };
+		79F968C51A84005F007D3C5A /* PGMAuthConnectorSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC57851A0AC44E000CF734 /* PGMAuthConnectorSerializer.m */; };
+		79F968C61A84006D007D3C5A /* PGMAuthMockDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C9643F1A0D08E90044D540 /* PGMAuthMockDataProvider.m */; };
+		79FF1D821A0BC42F00D450FC /* PGMAuthFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FF1D801A0BC42E00D450FC /* PGMAuthFactory.h */; };
+		79FF1D831A0BC42F00D450FC /* PGMAuthFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FF1D811A0BC42F00D450FC /* PGMAuthFactory.m */; };
+		79FF1D851A0BC57000D450FC /* PGMAuthFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF1D841A0BC57000D450FC /* PGMAuthFactoryTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7970C3C01A03FFAE004C57FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7970C3AA1A03FFAD004C57FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7970C3B21A03FFAD004C57FF;
+			remoteInfo = gridmobilesdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D6F12DB1A23846100F78E9D /* PGMSecureKeychainStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMSecureKeychainStorage.h; sourceTree = "<group>"; };
+		6D6F12DC1A23846100F78E9D /* PGMSecureKeychainStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMSecureKeychainStorage.m; sourceTree = "<group>"; };
+		6D8D2FC11A1D373E00DCAFBB /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		6D8E90821A1EB02C002391EB /* PGMSecureKeychainStorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMSecureKeychainStorageTests.swift; sourceTree = "<group>"; };
+		790813DD1A97FF4B00925770 /* PGMForgotUsernamePasswordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMForgotUsernamePasswordTests.swift; sourceTree = "<group>"; };
+		791BF88D1A35CDFF00984B2C /* PGMConsentPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMConsentPolicy.h; sourceTree = "<group>"; };
+		791BF88E1A35CDFF00984B2C /* PGMConsentPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMConsentPolicy.m; sourceTree = "<group>"; };
+		791BF8911A35CE6600984B2C /* PGMConsentPolicyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMConsentPolicyTests.swift; sourceTree = "<group>"; };
+		791BF8931A35F07A00984B2C /* PGMConsentSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMConsentSerializer.h; sourceTree = "<group>"; };
+		791BF8941A35F07A00984B2C /* PGMConsentSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMConsentSerializer.m; sourceTree = "<group>"; };
+		791BF8971A35F3FF00984B2C /* PGMConsentSerializerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMConsentSerializerTests.swift; sourceTree = "<group>"; };
+		791BF8991A360C5400984B2C /* PGMConsentConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMConsentConnector.h; sourceTree = "<group>"; };
+		791BF89A1A360C5400984B2C /* PGMConsentConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMConsentConnector.m; sourceTree = "<group>"; };
+		79500C121A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthKeychainStorageManager.h; sourceTree = "<group>"; };
+		79500C131A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthKeychainStorageManager.m; sourceTree = "<group>"; };
+		79500C161A1FCA47003A4B69 /* PGMAuthKeychainStorageManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthKeychainStorageManagerTests.swift; sourceTree = "<group>"; };
+		795B34A11A16364D00EC9D22 /* PGMCoreNetworkRequesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMCoreNetworkRequesterTests.swift; sourceTree = "<group>"; };
+		7970C3B31A03FFAD004C57FF /* GRIDMobileSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GRIDMobileSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7970C3B71A03FFAD004C57FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7970C3B81A03FFAD004C57FF /* gridmobilesdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gridmobilesdk.h; sourceTree = "<group>"; };
+		7970C3BE1A03FFAD004C57FF /* GRIDMobileSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRIDMobileSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7970C3C41A03FFAE004C57FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7970C3CF1A041B42004C57FF /* PGMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMClient.h; sourceTree = "<group>"; };
+		7970C3D01A041B42004C57FF /* PGMClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMClient.m; sourceTree = "<group>"; };
+		7970C3D31A041E12004C57FF /* gridmobilesdkTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gridmobilesdkTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		7970C3D41A041E13004C57FF /* PGMClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMClientTests.swift; sourceTree = "<group>"; };
+		798918FB1A07D412009633C7 /* PGMEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMEnvironment.h; sourceTree = "<group>"; };
+		798918FC1A07D412009633C7 /* PGMEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMEnvironment.m; sourceTree = "<group>"; };
+		798919011A07D5D6009633C7 /* PGMEnvironmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMEnvironmentTests.swift; sourceTree = "<group>"; };
+		798919031A07D70E009633C7 /* PGMAuthOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthOptions.h; sourceTree = "<group>"; };
+		798919041A07D70E009633C7 /* PGMAuthOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthOptions.m; sourceTree = "<group>"; };
+		798919071A07D72B009633C7 /* PGMAuthOptionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthOptionsTests.swift; sourceTree = "<group>"; };
+		798919091A081B56009633C7 /* PGMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMError.h; sourceTree = "<group>"; };
+		7989190A1A081B56009633C7 /* PGMError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMError.m; sourceTree = "<group>"; };
+		7989190D1A081BC7009633C7 /* PGMAuthenticatedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthenticatedContext.h; sourceTree = "<group>"; };
+		7989190E1A081BC7009633C7 /* PGMAuthenticatedContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthenticatedContext.m; sourceTree = "<group>"; };
+		798919111A0826EC009633C7 /* PGMAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthenticator.h; sourceTree = "<group>"; };
+		798919121A0826EC009633C7 /* PGMAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthenticator.m; sourceTree = "<group>"; };
+		798919151A08273D009633C7 /* PGMFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMFactory.h; sourceTree = "<group>"; };
+		798919161A08273D009633C7 /* PGMFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMFactory.m; sourceTree = "<group>"; };
+		798919191A082764009633C7 /* PGMClassroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMClassroom.h; sourceTree = "<group>"; };
+		7989191A1A082764009633C7 /* PGMClassroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMClassroom.m; sourceTree = "<group>"; };
+		7989191D1A083229009633C7 /* PGMAuthResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthResponse.h; sourceTree = "<group>"; };
+		7989191E1A083229009633C7 /* PGMAuthResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthResponse.m; sourceTree = "<group>"; };
+		798919211A089794009633C7 /* PGMFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMFactoryTests.swift; sourceTree = "<group>"; };
+		798919231A089C95009633C7 /* PGMAuthenticatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthenticatorTests.swift; sourceTree = "<group>"; };
+		798919251A089CB9009633C7 /* PGMAuthResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthResponseTests.swift; sourceTree = "<group>"; };
+		798919271A089CE8009633C7 /* PGMErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMErrorTests.swift; sourceTree = "<group>"; };
+		798919291A089D09009633C7 /* PGMAuthenticatedContextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthenticatedContextTests.swift; sourceTree = "<group>"; };
+		79A842F61A36CC0E002DA5F5 /* PGMConsentConnectorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMConsentConnectorTests.swift; sourceTree = "<group>"; };
+		79AC57781A09D9A2000CF734 /* PGMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMConstants.h; sourceTree = "<group>"; };
+		79AC57791A09D9A2000CF734 /* PGMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMConstants.m; sourceTree = "<group>"; };
+		79AC577E1A0AC0D0000CF734 /* PGMAuthConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthConnector.h; sourceTree = "<group>"; };
+		79AC577F1A0AC0D0000CF734 /* PGMAuthConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthConnector.m; sourceTree = "<group>"; };
+		79AC57821A0AC107000CF734 /* PGMAuthConnectorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthConnectorTests.swift; sourceTree = "<group>"; };
+		79AC57841A0AC44E000CF734 /* PGMAuthConnectorSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthConnectorSerializer.h; sourceTree = "<group>"; };
+		79AC57851A0AC44E000CF734 /* PGMAuthConnectorSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthConnectorSerializer.m; sourceTree = "<group>"; };
+		79AC57881A0AC46D000CF734 /* PGMAuthConnectorSerializerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthConnectorSerializerTests.swift; sourceTree = "<group>"; };
+		79BF46751A52097200D05086 /* PGMAuthContextValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthContextValidator.h; sourceTree = "<group>"; };
+		79BF46761A52097200D05086 /* PGMAuthContextValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthContextValidator.m; sourceTree = "<group>"; };
+		79BF46791A52F33C00D05086 /* PGMAuthContextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthContextValidatorTests.swift; sourceTree = "<group>"; };
+		79BF467B1A5393D900D05086 /* PGMClientRefreshIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMClientRefreshIntegrationTests.swift; sourceTree = "<group>"; };
+		79C9643E1A0D08E90044D540 /* PGMAuthMockDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthMockDataProvider.h; sourceTree = "<group>"; };
+		79C9643F1A0D08E90044D540 /* PGMAuthMockDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthMockDataProvider.m; sourceTree = "<group>"; };
+		79C964421A0D0A040044D540 /* PGMAuthMockDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthMockDataProviderTests.swift; sourceTree = "<group>"; };
+		79C964451A0D65E70044D540 /* PGMClientAuthIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMClientAuthIntegrationTests.swift; sourceTree = "<group>"; };
+		79C964481A1252780044D540 /* PGMCoreNetworkRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMCoreNetworkRequester.h; sourceTree = "<group>"; };
+		79C964491A1252780044D540 /* PGMCoreNetworkRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMCoreNetworkRequester.m; sourceTree = "<group>"; };
+		79C9644C1A12A3590044D540 /* PGMClientIntegrationTestsObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMClientIntegrationTestsObjC.m; sourceTree = "<group>"; };
+		79FF1D801A0BC42E00D450FC /* PGMAuthFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMAuthFactory.h; sourceTree = "<group>"; };
+		79FF1D811A0BC42F00D450FC /* PGMAuthFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMAuthFactory.m; sourceTree = "<group>"; };
+		79FF1D841A0BC57000D450FC /* PGMAuthFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGMAuthFactoryTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7970C3AF1A03FFAD004C57FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7970C3BB1A03FFAD004C57FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D8D2FBC1A1D369100DCAFBB /* SecureKeychainStorage */ = {
+			isa = PBXGroup;
+			children = (
+				6D8D2FC11A1D373E00DCAFBB /* README.rtf */,
+				6D6F12DB1A23846100F78E9D /* PGMSecureKeychainStorage.h */,
+				6D6F12DC1A23846100F78E9D /* PGMSecureKeychainStorage.m */,
+			);
+			name = SecureKeychainStorage;
+			sourceTree = "<group>";
+		};
+		7970C3A91A03FFAD004C57FF = {
+			isa = PBXGroup;
+			children = (
+				7970C3B51A03FFAD004C57FF /* gridmobilesdk */,
+				7970C3C21A03FFAE004C57FF /* gridmobilesdkTests */,
+				7970C3B41A03FFAD004C57FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7970C3B41A03FFAD004C57FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7970C3B31A03FFAD004C57FF /* GRIDMobileSDK.framework */,
+				7970C3BE1A03FFAD004C57FF /* GRIDMobileSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7970C3B51A03FFAD004C57FF /* gridmobilesdk */ = {
+			isa = PBXGroup;
+			children = (
+				79C964471A12522B0044D540 /* Core */,
+				7970C3B81A03FFAD004C57FF /* gridmobilesdk.h */,
+				798918FF1A07D42F009633C7 /* Authentication */,
+				6D8D2FBC1A1D369100DCAFBB /* SecureKeychainStorage */,
+				798919001A07D43A009633C7 /* Classroom */,
+				7970C3CF1A041B42004C57FF /* PGMClient.h */,
+				7970C3D01A041B42004C57FF /* PGMClient.m */,
+				798919151A08273D009633C7 /* PGMFactory.h */,
+				798919161A08273D009633C7 /* PGMFactory.m */,
+				798918FB1A07D412009633C7 /* PGMEnvironment.h */,
+				798918FC1A07D412009633C7 /* PGMEnvironment.m */,
+				798919091A081B56009633C7 /* PGMError.h */,
+				7989190A1A081B56009633C7 /* PGMError.m */,
+				7989190D1A081BC7009633C7 /* PGMAuthenticatedContext.h */,
+				7989190E1A081BC7009633C7 /* PGMAuthenticatedContext.m */,
+				79AC57781A09D9A2000CF734 /* PGMConstants.h */,
+				79AC57791A09D9A2000CF734 /* PGMConstants.m */,
+				7970C3B61A03FFAD004C57FF /* Supporting Files */,
+			);
+			path = gridmobilesdk;
+			sourceTree = "<group>";
+		};
+		7970C3B61A03FFAD004C57FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7970C3B71A03FFAD004C57FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7970C3C21A03FFAE004C57FF /* gridmobilesdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				79C964441A0D65AF0044D540 /* IntegrationTests */,
+				7970C3D31A041E12004C57FF /* gridmobilesdkTests-Bridging-Header.h */,
+				7970C3D41A041E13004C57FF /* PGMClientTests.swift */,
+				798919011A07D5D6009633C7 /* PGMEnvironmentTests.swift */,
+				798919071A07D72B009633C7 /* PGMAuthOptionsTests.swift */,
+				798919231A089C95009633C7 /* PGMAuthenticatorTests.swift */,
+				798919211A089794009633C7 /* PGMFactoryTests.swift */,
+				798919251A089CB9009633C7 /* PGMAuthResponseTests.swift */,
+				798919271A089CE8009633C7 /* PGMErrorTests.swift */,
+				798919291A089D09009633C7 /* PGMAuthenticatedContextTests.swift */,
+				79AC57821A0AC107000CF734 /* PGMAuthConnectorTests.swift */,
+				79AC57881A0AC46D000CF734 /* PGMAuthConnectorSerializerTests.swift */,
+				79FF1D841A0BC57000D450FC /* PGMAuthFactoryTests.swift */,
+				79C964421A0D0A040044D540 /* PGMAuthMockDataProviderTests.swift */,
+				795B34A11A16364D00EC9D22 /* PGMCoreNetworkRequesterTests.swift */,
+				6D8E90821A1EB02C002391EB /* PGMSecureKeychainStorageTests.swift */,
+				79500C161A1FCA47003A4B69 /* PGMAuthKeychainStorageManagerTests.swift */,
+				791BF8911A35CE6600984B2C /* PGMConsentPolicyTests.swift */,
+				791BF8971A35F3FF00984B2C /* PGMConsentSerializerTests.swift */,
+				79A842F61A36CC0E002DA5F5 /* PGMConsentConnectorTests.swift */,
+				79BF46791A52F33C00D05086 /* PGMAuthContextValidatorTests.swift */,
+				7970C3C31A03FFAE004C57FF /* Supporting Files */,
+			);
+			path = gridmobilesdkTests;
+			sourceTree = "<group>";
+		};
+		7970C3C31A03FFAE004C57FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7970C3C41A03FFAE004C57FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		798918FF1A07D42F009633C7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				79AC577C1A0ABF54000CF734 /* Connectors */,
+				798919031A07D70E009633C7 /* PGMAuthOptions.h */,
+				798919041A07D70E009633C7 /* PGMAuthOptions.m */,
+				798919111A0826EC009633C7 /* PGMAuthenticator.h */,
+				798919121A0826EC009633C7 /* PGMAuthenticator.m */,
+				7989191D1A083229009633C7 /* PGMAuthResponse.h */,
+				7989191E1A083229009633C7 /* PGMAuthResponse.m */,
+				79FF1D801A0BC42E00D450FC /* PGMAuthFactory.h */,
+				79FF1D811A0BC42F00D450FC /* PGMAuthFactory.m */,
+				79500C121A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.h */,
+				79500C131A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.m */,
+				791BF88D1A35CDFF00984B2C /* PGMConsentPolicy.h */,
+				791BF88E1A35CDFF00984B2C /* PGMConsentPolicy.m */,
+				79BF46751A52097200D05086 /* PGMAuthContextValidator.h */,
+				79BF46761A52097200D05086 /* PGMAuthContextValidator.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		798919001A07D43A009633C7 /* Classroom */ = {
+			isa = PBXGroup;
+			children = (
+				798919191A082764009633C7 /* PGMClassroom.h */,
+				7989191A1A082764009633C7 /* PGMClassroom.m */,
+			);
+			name = Classroom;
+			sourceTree = "<group>";
+		};
+		79AC577C1A0ABF54000CF734 /* Connectors */ = {
+			isa = PBXGroup;
+			children = (
+				79C9643D1A0D08960044D540 /* MockData */,
+				79AC577D1A0AC090000CF734 /* Serializers */,
+				79AC577E1A0AC0D0000CF734 /* PGMAuthConnector.h */,
+				79AC577F1A0AC0D0000CF734 /* PGMAuthConnector.m */,
+				791BF8991A360C5400984B2C /* PGMConsentConnector.h */,
+				791BF89A1A360C5400984B2C /* PGMConsentConnector.m */,
+			);
+			name = Connectors;
+			sourceTree = "<group>";
+		};
+		79AC577D1A0AC090000CF734 /* Serializers */ = {
+			isa = PBXGroup;
+			children = (
+				79AC57841A0AC44E000CF734 /* PGMAuthConnectorSerializer.h */,
+				79AC57851A0AC44E000CF734 /* PGMAuthConnectorSerializer.m */,
+				791BF8931A35F07A00984B2C /* PGMConsentSerializer.h */,
+				791BF8941A35F07A00984B2C /* PGMConsentSerializer.m */,
+			);
+			name = Serializers;
+			sourceTree = "<group>";
+		};
+		79C9643D1A0D08960044D540 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				79C9643E1A0D08E90044D540 /* PGMAuthMockDataProvider.h */,
+				79C9643F1A0D08E90044D540 /* PGMAuthMockDataProvider.m */,
+			);
+			name = MockData;
+			sourceTree = "<group>";
+		};
+		79C964441A0D65AF0044D540 /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				79C964451A0D65E70044D540 /* PGMClientAuthIntegrationTests.swift */,
+				79C9644C1A12A3590044D540 /* PGMClientIntegrationTestsObjC.m */,
+				79BF467B1A5393D900D05086 /* PGMClientRefreshIntegrationTests.swift */,
+				790813DD1A97FF4B00925770 /* PGMForgotUsernamePasswordTests.swift */,
+			);
+			name = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		79C964471A12522B0044D540 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				79C964481A1252780044D540 /* PGMCoreNetworkRequester.h */,
+				79C964491A1252780044D540 /* PGMCoreNetworkRequester.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7970C3B01A03FFAD004C57FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7970C3B91A03FFAD004C57FF /* gridmobilesdk.h in Headers */,
+				7970C3D11A041B42004C57FF /* PGMClient.h in Headers */,
+				798919051A07D70E009633C7 /* PGMAuthOptions.h in Headers */,
+				7989191F1A083229009633C7 /* PGMAuthResponse.h in Headers */,
+				6D6F12DD1A23846100F78E9D /* PGMSecureKeychainStorage.h in Headers */,
+				7989190B1A081B56009633C7 /* PGMError.h in Headers */,
+				791BF88F1A35CDFF00984B2C /* PGMConsentPolicy.h in Headers */,
+				7989190F1A081BC7009633C7 /* PGMAuthenticatedContext.h in Headers */,
+				798919131A0826EC009633C7 /* PGMAuthenticator.h in Headers */,
+				79BF46771A52097200D05086 /* PGMAuthContextValidator.h in Headers */,
+				79AC57801A0AC0D0000CF734 /* PGMAuthConnector.h in Headers */,
+				791BF89B1A360C5400984B2C /* PGMConsentConnector.h in Headers */,
+				798919171A08273D009633C7 /* PGMFactory.h in Headers */,
+				791BF8951A35F07A00984B2C /* PGMConsentSerializer.h in Headers */,
+				79C964401A0D08E90044D540 /* PGMAuthMockDataProvider.h in Headers */,
+				79C9644A1A1252780044D540 /* PGMCoreNetworkRequester.h in Headers */,
+				79AC57861A0AC44E000CF734 /* PGMAuthConnectorSerializer.h in Headers */,
+				79FF1D821A0BC42F00D450FC /* PGMAuthFactory.h in Headers */,
+				798918FD1A07D412009633C7 /* PGMEnvironment.h in Headers */,
+				79AC577A1A09D9A2000CF734 /* PGMConstants.h in Headers */,
+				7989191B1A082764009633C7 /* PGMClassroom.h in Headers */,
+				79500C141A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7970C3B21A03FFAD004C57FF /* GRIDMobileSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7970C3C91A03FFAE004C57FF /* Build configuration list for PBXNativeTarget "GRIDMobileSDK" */;
+			buildPhases = (
+				7970C3AE1A03FFAD004C57FF /* Sources */,
+				7970C3AF1A03FFAD004C57FF /* Frameworks */,
+				7970C3B01A03FFAD004C57FF /* Headers */,
+				7970C3B11A03FFAD004C57FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRIDMobileSDK;
+			productName = gridmobilesdk;
+			productReference = 7970C3B31A03FFAD004C57FF /* GRIDMobileSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7970C3BD1A03FFAD004C57FF /* GRIDMobileSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7970C3CC1A03FFAE004C57FF /* Build configuration list for PBXNativeTarget "GRIDMobileSDKTests" */;
+			buildPhases = (
+				7970C3BA1A03FFAD004C57FF /* Sources */,
+				7970C3BB1A03FFAD004C57FF /* Frameworks */,
+				7970C3BC1A03FFAD004C57FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7970C3C11A03FFAE004C57FF /* PBXTargetDependency */,
+			);
+			name = GRIDMobileSDKTests;
+			productName = gridmobilesdkTests;
+			productReference = 7970C3BE1A03FFAD004C57FF /* GRIDMobileSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7970C3AA1A03FFAD004C57FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Richard Rosiak";
+				TargetAttributes = {
+					7970C3B21A03FFAD004C57FF = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					7970C3BD1A03FFAD004C57FF = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					79DD03F21A851A7E00F7D996 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 7970C3AD1A03FFAD004C57FF /* Build configuration list for PBXProject "gridmobilesdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7970C3A91A03FFAD004C57FF;
+			productRefGroup = 7970C3B41A03FFAD004C57FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7970C3B21A03FFAD004C57FF /* GRIDMobileSDK */,
+				7970C3BD1A03FFAD004C57FF /* GRIDMobileSDKTests */,
+				79DD03F21A851A7E00F7D996 /* UniversalFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7970C3B11A03FFAD004C57FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8D2FC71A1D373E00DCAFBB /* README.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7970C3BC1A03FFAD004C57FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8D2FC81A1D373E00DCAFBB /* README.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79DD03F61A851AA400F7D996 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is based on Jacob Van Order's answer on apple dev forums https://devforums.apple.com/message/971277\n# See also http://spin.atomicobject.com/2011/12/13/building-a-universal-framework-for-ios/ for the start\n\n######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"GRIDMobileSDK\"  #\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator | echo\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos | echo\n\n#xcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" | echo\n\n#xcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" | echo\n\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make fat universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n\n######################\n# On Release, copy the result to desktop folder\n######################\n\nif [ \"${CONFIGURATION}\" == \"Release\" ]; then\n    mkdir \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n    cp -r \"${FRAMEWORK}\" \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\nfi\n\n\n######################\n# If needed, open the Framework folder\n######################\n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n    if [ \"${CONFIGURATION}\" == \"Release\" ]; then\n        open \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n    else\n        open \"${UNIVERSAL_LIBRARY_DIR}/\"\n    fi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7970C3AE1A03FFAD004C57FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C9644B1A1252780044D540 /* PGMCoreNetworkRequester.m in Sources */,
+				79500C151A1FCA19003A4B69 /* PGMAuthKeychainStorageManager.m in Sources */,
+				79BF46781A52097200D05086 /* PGMAuthContextValidator.m in Sources */,
+				6D6F12DE1A23846100F78E9D /* PGMSecureKeychainStorage.m in Sources */,
+				79AC57811A0AC0D0000CF734 /* PGMAuthConnector.m in Sources */,
+				7989191C1A082764009633C7 /* PGMClassroom.m in Sources */,
+				791BF8901A35CDFF00984B2C /* PGMConsentPolicy.m in Sources */,
+				79FF1D831A0BC42F00D450FC /* PGMAuthFactory.m in Sources */,
+				79AC57871A0AC44E000CF734 /* PGMAuthConnectorSerializer.m in Sources */,
+				791BF8961A35F07A00984B2C /* PGMConsentSerializer.m in Sources */,
+				798919141A0826EC009633C7 /* PGMAuthenticator.m in Sources */,
+				798919201A083229009633C7 /* PGMAuthResponse.m in Sources */,
+				798918FE1A07D412009633C7 /* PGMEnvironment.m in Sources */,
+				798919061A07D70E009633C7 /* PGMAuthOptions.m in Sources */,
+				798919101A081BC7009633C7 /* PGMAuthenticatedContext.m in Sources */,
+				79C964411A0D08E90044D540 /* PGMAuthMockDataProvider.m in Sources */,
+				798919181A08273D009633C7 /* PGMFactory.m in Sources */,
+				7970C3D21A041B42004C57FF /* PGMClient.m in Sources */,
+				791BF89C1A360C5400984B2C /* PGMConsentConnector.m in Sources */,
+				79AC577B1A09D9A2000CF734 /* PGMConstants.m in Sources */,
+				7989190C1A081B56009633C7 /* PGMError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7970C3BA1A03FFAD004C57FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AC57831A0AC107000CF734 /* PGMAuthConnectorTests.swift in Sources */,
+				79F968C61A84006D007D3C5A /* PGMAuthMockDataProvider.m in Sources */,
+				79C964431A0D0A040044D540 /* PGMAuthMockDataProviderTests.swift in Sources */,
+				79BF467C1A5393D900D05086 /* PGMClientRefreshIntegrationTests.swift in Sources */,
+				79F968B61A83FFDB007D3C5A /* PGMFactory.m in Sources */,
+				79BF467A1A52F33C00D05086 /* PGMAuthContextValidatorTests.swift in Sources */,
+				798919081A07D72B009633C7 /* PGMAuthOptionsTests.swift in Sources */,
+				79F968BA1A83FFF2007D3C5A /* PGMConstants.m in Sources */,
+				79AC57891A0AC46D000CF734 /* PGMAuthConnectorSerializerTests.swift in Sources */,
+				791BF8981A35F3FF00984B2C /* PGMConsentSerializerTests.swift in Sources */,
+				79F968B71A83FFDF007D3C5A /* PGMEnvironment.m in Sources */,
+				79A842F71A36CC0E002DA5F5 /* PGMConsentConnectorTests.swift in Sources */,
+				79F968C51A84005F007D3C5A /* PGMAuthConnectorSerializer.m in Sources */,
+				795B34A21A16364D00EC9D22 /* PGMCoreNetworkRequesterTests.swift in Sources */,
+				798919261A089CB9009633C7 /* PGMAuthResponseTests.swift in Sources */,
+				79F968BB1A840018007D3C5A /* PGMAuthContextValidator.m in Sources */,
+				79C964461A0D65E70044D540 /* PGMClientAuthIntegrationTests.swift in Sources */,
+				79F968B51A83FFCF007D3C5A /* PGMClient.m in Sources */,
+				790813DE1A97FF4B00925770 /* PGMForgotUsernamePasswordTests.swift in Sources */,
+				791BF8921A35CE6600984B2C /* PGMConsentPolicyTests.swift in Sources */,
+				7970C3D51A041E13004C57FF /* PGMClientTests.swift in Sources */,
+				6D8E90831A1EB02C002391EB /* PGMSecureKeychainStorageTests.swift in Sources */,
+				798919021A07D5D6009633C7 /* PGMEnvironmentTests.swift in Sources */,
+				79FF1D851A0BC57000D450FC /* PGMAuthFactoryTests.swift in Sources */,
+				7989192A1A089D09009633C7 /* PGMAuthenticatedContextTests.swift in Sources */,
+				79F968C01A84003B007D3C5A /* PGMAuthenticator.m in Sources */,
+				79C9644D1A12A3590044D540 /* PGMClientIntegrationTestsObjC.m in Sources */,
+				79F968BF1A840036007D3C5A /* PGMAuthResponse.m in Sources */,
+				79F968BC1A840024007D3C5A /* PGMConsentPolicy.m in Sources */,
+				79F968C11A840044007D3C5A /* PGMAuthOptions.m in Sources */,
+				79F968C41A840059007D3C5A /* PGMConsentSerializer.m in Sources */,
+				798919241A089C95009633C7 /* PGMAuthenticatorTests.swift in Sources */,
+				79F968BE1A840031007D3C5A /* PGMAuthFactory.m in Sources */,
+				79F968C21A840048007D3C5A /* PGMConsentConnector.m in Sources */,
+				79F968B91A83FFE9007D3C5A /* PGMAuthenticatedContext.m in Sources */,
+				798919221A089794009633C7 /* PGMFactoryTests.swift in Sources */,
+				79F968C31A84004E007D3C5A /* PGMAuthConnector.m in Sources */,
+				79500C171A1FCA47003A4B69 /* PGMAuthKeychainStorageManagerTests.swift in Sources */,
+				79F968BD1A84002A007D3C5A /* PGMAuthKeychainStorageManager.m in Sources */,
+				798919281A089CE8009633C7 /* PGMErrorTests.swift in Sources */,
+				79F968B81A83FFE3007D3C5A /* PGMError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7970C3C11A03FFAE004C57FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7970C3B21A03FFAD004C57FF /* GRIDMobileSDK */;
+			targetProxy = 7970C3C01A03FFAE004C57FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7970C3C71A03FFAE004C57FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7970C3C81A03FFAE004C57FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7970C3CA1A03FFAE004C57FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = gridmobilesdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		7970C3CB1A03FFAE004C57FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = gridmobilesdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		7970C3CD1A03FFAE004C57FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/gridmobilesdk-bvyypwsulaggnfayjmfcfzxcefmy/Build/Products/Debug-iphonesimulator",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = gridmobilesdkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gridmobilesdkTests/gridmobilesdkTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7970C3CE1A03FFAE004C57FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/gridmobilesdk-bvyypwsulaggnfayjmfcfzxcefmy/Build/Products/Debug-iphonesimulator",
+				);
+				INFOPLIST_FILE = gridmobilesdkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gridmobilesdkTests/gridmobilesdkTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		79DD03F31A851A7E00F7D996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		79DD03F41A851A7E00F7D996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7970C3AD1A03FFAD004C57FF /* Build configuration list for PBXProject "gridmobilesdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7970C3C71A03FFAE004C57FF /* Debug */,
+				7970C3C81A03FFAE004C57FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7970C3C91A03FFAE004C57FF /* Build configuration list for PBXNativeTarget "GRIDMobileSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7970C3CA1A03FFAE004C57FF /* Debug */,
+				7970C3CB1A03FFAE004C57FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7970C3CC1A03FFAE004C57FF /* Build configuration list for PBXNativeTarget "GRIDMobileSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7970C3CD1A03FFAE004C57FF /* Debug */,
+				7970C3CE1A03FFAE004C57FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DD03F51A851A7E00F7D996 /* Build configuration list for PBXAggregateTarget "UniversalFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DD03F31A851A7E00F7D996 /* Debug */,
+				79DD03F41A851A7E00F7D996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7970C3AA1A03FFAD004C57FF /* Project object */;
+}

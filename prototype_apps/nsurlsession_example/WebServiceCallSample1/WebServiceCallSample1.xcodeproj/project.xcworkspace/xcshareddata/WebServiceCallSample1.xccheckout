@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1EE8D67D-32E7-4416-90E6-6EEBD45B6AAB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WebServiceCallSample1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>50DFE88D4C649C1C2961995E5EFA4690A241DAB2</key>
+		<string>ssh://devops-tools.pearson.com/mp/grid-ios-sdk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>prototype_apps/nsurlsession_example/WebServiceCallSample1/WebServiceCallSample1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>50DFE88D4C649C1C2961995E5EFA4690A241DAB2</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://devops-tools.pearson.com/mp/grid-ios-sdk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>50DFE88D4C649C1C2961995E5EFA4690A241DAB2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>50DFE88D4C649C1C2961995E5EFA4690A241DAB2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PiModuleLogin</string>
+		</dict>
+	</array>
+</dict>
+</plist>
