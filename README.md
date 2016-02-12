@@ -70,12 +70,12 @@ Swift code consuming GRID Mobile framework via Cocoa Pods needs to point to grid
 When using .framework distribution - because GRID Mobile framework has an umbrella header file (gridmobilesdk.h) there is no need to import each class separately. All you need to do is reference the framework in a single import statement
 
 ####Objective-C
-```Objective C
+```
 #import <GRIDMobileSDK/GRIDMobileSDK.h>
 ```
 
 ####Swift
-```javascript
+```
 import GRIDMobileSDK
 ```
 
@@ -85,14 +85,14 @@ and all public headers included in the umbrella header are available to your cod
 Your app should obtain client id, client secret and redirect url from your authentication provider (such as Pi). With that information you can init PGMAuthOptions object:
 
 ####Objective-C
-```Objective C
+```
 PGMAuthOptions *clientOptions = [[PGMAuthOptions alloc] initWithClientId:@"myClientId12345"
                                                              andClientSecret:@"mySecret"
                                                               andRedirectUrl:@"http://myRedirectUrl.com"];
 ```
 
 ####Swift
-```javascript
+```
 var clientOptions = PGMAuthOptions(clientId: "myClientId12345",
             andClientSecret: "mySecret", andRedirectUrl: "http://myRedirectUrl.com")
 ```
@@ -111,12 +111,12 @@ PGMCustomEnv
 to init the client.
 
 ####Objective-C
-```Objective C
+```
 PGMClient *gridClient = [[PGMClient alloc] initWithEnvironmentType:PGMStagingEnv andOptions:clientOptions];
 ```
 
 ####Swift:
-```javascript
+```
 var gridClient = PGMClient(environmentType: .StagingEnv, andOptions: clientOptions)
 ```
 
@@ -126,7 +126,7 @@ At this point the GRID client is ready to receive requests for user's authentica
 All requests involving network calls, such as login, are done asynchronously and need a completion block to be passed in. The completion block for login is of type AuthenticationRequestComplete. Here are code examples of how user authentication could be done:
 
 ####Objective-C
-```Objective C
+```
 AuthenticationRequestComplete onComplete = ^(PGMAuthResponse *response) {
         dispatch_async(dispatch_get_main_queue(), ^{ // execute the completion block on the main thread, if necessary 
 		if (response.error) {
@@ -145,7 +145,7 @@ AuthenticationRequestComplete onComplete = ^(PGMAuthResponse *response) {
 
 
 ####Swift
-```javascript
+```
 func signInComplete(response: PGMAuthResponse) {
         if (response.error != nil) {
 		//error condition during login
@@ -165,12 +165,12 @@ gridClient.authenticator.authenticateWithUserName("myusername", andPassword: "my
 The response from GRID Mobile SDK is of type PGMAuthResponse. This object has a property - authContext, which encapsulates PGMAuthenticatedContext type. This authenticated context needs to be passed with all subsequent GRID Mobile requests. It contains tokens, user and username. Consider this sample code for storing the context in a property/variable:
 
 ####Objective-C
-```Objective C
+```
 PGMAuthenticatedContext *authContext = response.authContext;
 ```
 
 ####Swift
-```javascript
+```
 var authContext = response.authContext
 ```
 
@@ -201,14 +201,14 @@ The response object - PGMAuthResponse - which is passed to AuthenticationRequest
 As part of the login process GRIDMobileSDK framework securely stores the authenticated context (PGMAuthenticatedContext) in the keychain. The application may retrieve this data by calling retrieveKeychainDataWithIdentifier:key, where key is the Pi user Id which was used as an identifier to securely store the data in keychain. The Pi user Id is a property of PGMAuthenticatedContext - userIdentityId. Here is a usage example:
 
 ####Objective-C
-```Objective C
+```
 NSData *data = [PGMSecureKeychainStorage retrieveKeychainDataWithIdentifier:authContext.userIdentityId];
 
 PGMAuthenticatedContext *myContext = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 ```
 
 ####Swift
-```javascript
+```
 var data = PGMSecureKeychainStorage.retrieveKeychainDataWithIdentifier(authContext.userIdentityId)
 
 var myContext = NSKeyedUnarchiver.unarchiveObjectWithData(data) as PGMAuthenticatedContext
@@ -218,14 +218,14 @@ var myContext = NSKeyedUnarchiver.unarchiveObjectWithData(data) as PGMAuthentica
 When attempting to log in through Pi for the first time, the user may be required to consent to certain policies (e.g.: terms of use, privacy, etc). In this case the framework will return an error of type `PGMAuthNoConsentError` (int value of 2) in the login request's response object. The response will also contain an array of consent policy objects (`PGMConsentPolicy`) that will need to be reviewed and consented to by the user. Here is an example of how to pull this data from the response object.
 
 ####Objective-C
-```Objective C
+```
 if (!response.error && response.error.code == 2) {
     NSArray *consentPolicies = response.consentPolicies;
 }
 ```
 
 ####Swift
-```javascript
+```
 var consentPolicies: Array<PGMConsentPolicy>?
 
 if (response.error != nil && response.error.code == 2) {
@@ -238,7 +238,7 @@ Each consent policy object contains a url that points to the text for that polic
 These policies should be shown to user one by one - each url needs to be rendered by the app and shown to user - for review and consent. After all policies have been cycled through and review and consent have been properly indicated (`isConsented = true` and `isReviewed = true`) for each consent policy, the array of consent policy objects can be returned through another framework call. Here are corresponding code examples:
 
 ####Objective-C
-```Objective C
+```
 [gridClient.authenticator submitUserConsentPolicies:consentPolicies
                                        withUsername:username
                                            password:password
@@ -247,7 +247,7 @@ These policies should be shown to user one by one - each url needs to be rendere
 ```
 
 ####Swift
-```javascript
+```
 gridClient.authenticator.submitUserConsentPolicies(consentPolicies, withUsername: username, password: password, escrowTicket: escrowTicket, onComplete: onComplete)
 ```
 
@@ -280,12 +280,12 @@ Here is the full list of errors that could be found in `respnse.error.code` rela
 The logout removes authenticated context from keychain for the user. The user will have to login again before the app can continue using GRID Mobile framework for additional data requests. Here are code examples of how to log out:
 
 ####Objective-C
-```Objective C
+```
 PGMAuthResponse *signOutResponse = [gridClient.authenticator logoutUserWithAuthenticatedContext:authContext];
 ```
 
 ####Swift
-```javascript
+```
 var signOutResponse: PGMAuthResponse?
 signOutResponse = gridClient!.authenticator.logoutUserWithAuthenticatedContext(authContext)
 ``` 
@@ -302,7 +302,7 @@ The PGMAuthenticatedContext object in signOutResponse is nil. The app should dis
 This request requires a single piece of information - user's primary e-mail address. As with the other async request - completion handler block must also be provided. A successful request means Pi sent the username value to the provided e-mail. Here are examples of possible implementation:
 
 ####Objective-C
-```Objective C
+```
 AuthenticationRequestComplete forgotUsernameCompletionHandler = ^(PGMAuthResponse *response) {
         dispatch_async(dispatch_get_main_queue(), ^{ // execute the completion block on the main thread, if desired 
 		if (response.error) {
@@ -319,7 +319,7 @@ AuthenticationRequestComplete forgotUsernameCompletionHandler = ^(PGMAuthRespons
 ```
 
 ####Swift
-```javascript
+```
 func performForgotUsernameWith(email: String) {
         self.client!.authenticator.forgotUsernameForEmail(email, onComplete: { (authResponse: PGMAuthResponse!) -> Void in
             NSOperationQueue.mainQueue().addOperationWithBlock({ // execute the completion block on the main thread, if desired
@@ -356,7 +356,7 @@ As with previous requests the error property of the PGMAuthResponse object const
 Forgot password is very similar to forogot username request. The difference is - the app client must provide the username. Here are examples:
 
 ####Objective-C
-```Objective C
+```
 AuthenticationRequestComplete forgotPasswordCompletionHandler = ^(PGMAuthResponse *response) {
         dispatch_async(dispatch_get_main_queue(), ^{ // execute the completion block on the main thread, if desired
                 if (response.error) {
@@ -373,7 +373,7 @@ AuthenticationRequestComplete forgotPasswordCompletionHandler = ^(PGMAuthRespons
 ```
 
 ####Swift
-```javascript
+```
 func performForgotPasswordWith(username: String) {
     self.client!.authenticator.forgotPasswordForUsername(username, onComplete: { (authResponse: PGMAuthResponse!) -> Void in
         NSOperationQueue.mainQueue().addOperationWithBlock({ // execute the completion block on the main thread, if desired
@@ -410,7 +410,7 @@ The integer values of the `response.error.code` is as follows:
 Pi access token has an expiration time stamp which normally forces an app to either refresh it or have the user to sign in again. When using GRID Mobile SDK this problem goes away almost entirely. All that needs to be done is use a method included in the Authenticator class `obtainCurrentTokenForAuthContext:onComplete:` which will always return a current access token, even if refresh is necessary. The only exception is when the refresh token itself is expired, in which scenario user will have to sign in again. Here is an example of how this method could be consumed:
 
 ####Objective-C
-```Objective C
+```
 //At this point the app should already have authContext as the result of the sign in process
 
 AuthenticationRequestComplete obtainCurrentTokenCompletionHandler = ^(PGMAuthResponse *response) {
@@ -431,7 +431,7 @@ AuthenticationRequestComplete obtainCurrentTokenCompletionHandler = ^(PGMAuthRes
 ```
 
 ####Swift
-```javascript
+```
 //At this point the app should already have authContext as the result of the sign in process
 
 func obtainCurrentToken(authContext: PGMAuthenticatedContext) {
